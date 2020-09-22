@@ -1,0 +1,27 @@
+
+<!doctype html>
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Project</h1>
+  <h1 class="display-4">Department Management</h1>
+
+  {% if user.is_authenticated %}
+  <p class="lead">
+       <a class="btn btn-primary btn-lg" href="{% url 'department_list' %}" role="button">View All Departments</a>
+
+  </p>
+
+{%else%}
+
+ <p class="lead">
+       <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Log In</a>
+
+{% endif %}
+</div>
+{% endblock content %}
+</html>

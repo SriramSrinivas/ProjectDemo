@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="client-entry">
+  <h2>{{ department.name }}</h2>
+
+  </div>
+
+  <p><a href="{% url 'department_edit' client.pk %}">Edit</a> | <a href="{% url 'department_delete' client.pk %}">Delete</a></p>
+  <p>Back to <a href="{% url 'department_list' %}">All Clients</a>.</p>
+{% endblock content %}
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+{% if user.is_superuser%}
+
+    <h1>Edit</h1>
+    <form action="" method="post">{% csrf_token %}
+{{ form|crispy }}
+    <button class="btn btn-info ml-2" type="submit">Update</button>
+</form>
+
+{% else %}
+    <p>Sorry, you need Admin privileges, contact your administrator for questions. Have a nice day !</p>
+{% endif %}
+
+{% endblock content %}
+</html>

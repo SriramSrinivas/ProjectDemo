@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Departments{% endblock title %}
+
+
+
+{% block content %}
+
+
+  {% for department in object_list %}
+    <div class="card">
+      <div class="card-header">
+        <span class="font-weight-bold">Name:{{ department.name }}|</span>
+        <span class="font-weight-bold">Abbreviation: {{ department.abbreviation}} | </span>
+        <span class="font-weight-bold">Description: {{ department.description }} | </span>
+
+        <span class="font-muted">Active: {{ department.active }} | </span>
+      </div>
+      <div class="card-body">
+
+        <a href="{% url 'department_edit' department.pk %}">Edit</a> |
+        <a href="{% url 'department_delete' department.pk %}">Delete</a>
+      </div>
+
+
+    </div>
+    <br />
+  {% endfor %}
+
+
+{% endblock content %}

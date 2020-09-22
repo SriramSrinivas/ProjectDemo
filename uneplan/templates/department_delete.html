@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_superuser%}
+    <h1>Delete</h1>
+    <form action="" method="post">{% csrf_token %}
+      <p>Are you sure you want to delete "{{ department.name }}"?</p>
+      <button class="btn btn-danger ml-2" type="submit">Confirm</button>
+    </form>
+
+{% else %}
+    <p>Sorry, you need Admin privileges, contact your administrator for questions. Have a nice day !</p>
+{% endif %}
+
+{% endblock content %}
+</html>
