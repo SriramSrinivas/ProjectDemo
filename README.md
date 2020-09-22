@@ -49,39 +49,39 @@ by typing localhost:8000 or 127.0.0.1:800/, if you are using alternate approach 
 
 Here is what you will see after application is loaded:
 
-![Home](Screenshot%20from%202020-09-22%2007-04-46.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-04-46.png)
 
 
 Next you can login, by selecting the user you have opted as admin user
 
  
-![Home](Screenshot%20from%202020-09-22%2007-09-30.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-09-30.png)
 
 After the Login screen, if login is successful, you should see the home page as shown below:
  
-![Home](Screenshot%20from%202020-09-22%2007-16-50.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-16-50.png)
 
 You should be able to see list of departments, you should be able to edit/Delete/Create since you are an admin user. 
 
 On top of the banner you can see the link to add new Department, once you click (you should see the following page):
 
-![Home](Screenshot%20from%202020-09-22%2007-18-33.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-18-33.png)
 
 
 In order to add new user (non-admin user), please navigate to localhost:8000/admin/ and you can select add user in the home page, and add user details as shown below:
 
-![Home](Screenshot%20from%202020-09-22%2007-22-02.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-22-02.png)
 
 In order to keep new user as non-admin, please uncheck staff status and supervisor status, as shown in the screen below:
 
 
-![Home](Screenshot%20from%202020-09-22%2007-23-22.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-23-22.png)
 
 Now you can navigate  home page by typing (localhost:8000/department/) in browser and you can log out and login with new (non-admin user). The non-admin user only has Read access.
 
 If the user is non-admin, when he tries to click edit/delete/create the user sees the following note:
 
-![Home](Screenshot%20from%202020-09-22%2007-27-03.png)
+![Home](Screenshots/Screenshot%20from%202020-09-22%2007-27-03.png)
 
 
 The application API can be consumed with following end points (for testing and demo using Postman)
@@ -94,7 +94,7 @@ Enpoints are:-  PUT :localhost:8000/department/4/update/
                 
  Example of GET is shown to get an undestanding of how to use API.
  
- ![Home](Screenshot%20from%202020-09-22%2007-31-25.png)
+ ![Home](Screenshots/Screenshot%20from%202020-09-22%2007-31-25.png)
  
  
 
