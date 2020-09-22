@@ -38,7 +38,7 @@ The benefit of Docker it will  take care of the dependencies, all you need is to
 
 1. sudo docker-compose build
 2. sudo docker-compose up  // To bring up the application
-3. sudo docker-compose down  // To bring up the application
+3. sudo docker-compose down  // To bring down the application
 
 
 There is a lot of things which are inside the docker-compose file such as the nginx (webserver), Docker version is mostly used for production deployment also can be used locally, but the way it is set up such that any one who wants to deploy this to production in 
@@ -47,7 +47,7 @@ AWS EC2, he can run the Docker commands and make necessary security groups to br
 
 
 Which ever approach you have used once the server starts running, you should be able to connect via browser to the application 
-by typing localhost:8000 or 127.0.0.1:800/, if you are using alternate approach you need to use the nginx port in my case I am using it 100.
+by typing localhost:8000 or 127.0.0.1:8000/, if you are using alternate approach you need to use the nginx port in my case I am using it 100.
 
 Here is what you will see after application is loaded:
 
