@@ -1,12 +1,12 @@
 # ProjectDemo
 This project is developed by Sriram Srinivasan, it is a simple web application built using Django (Python).
 
-##Website Functionality
+## Website Functionality
 
 This website will allow users to access list of departments in the university, if you are an admin user you should be able to create new departments, edit and delete existing one.
 The website has User interface which allows users to see and do the CRUD functionality, also website has REST end points, which can be accessed using Postman or any Java Script framework such as Angular. In order to use the API's user must be enrolled in the system.
 
-##Steps to Run this project Locally
+## Steps to Run this project Locally
 
 There are two ways you can run this project, first is simply install Python (version 3 or above), and pip, after installation run the following commands:
 1.  pip install Django
