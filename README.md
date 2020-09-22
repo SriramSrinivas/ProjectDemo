@@ -87,9 +87,15 @@ If the user is non-admin, when he tries to click edit/delete/create the user see
 The application API can be consumed with following end points (for testing and demo using Postman)
 
 
-Enpoints are:-  PUT :localhost:8000/department/4/update/
-                GET : localhost:8000/department/read
-                POST: localhost:8000/department/update ( Add body while sending request)
+Enpoints are:-  
+
+
+                PUT :localhost:8000/department/4/update/
+
+                GET : localhost:8000/department/read/
+                
+                POST: localhost:8000/department/update/
+                 ( Add body while sending request)
                 
                 
  Example of GET is shown to get an undestanding of how to use API.
